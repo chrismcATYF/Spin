@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Spin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JX1-DB-inD" customClass="GradientView" customModule="Spin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF9-Vu-zXz" customClass="RoundButton" customModule="Spin" customModuleProvider="target">
+                                        <rect key="frame" x="112.5" y="296" width="150" height="50"/>
+                                        <color key="backgroundColor" red="0.033594113639999999" green="0.68123061630000004" blue="0.88939393590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WGy-RN-EIm"/>
+                                            <constraint firstAttribute="width" constant="150" id="eUc-sf-s0T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="Get started">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Gw3-Zv-Pr9" kind="show" id="cRu-Z9-9gk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVe-Ab-vL5">
+                                        <rect key="frame" x="147.5" y="106" width="80" height="56"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9061178286668613" green="0.9061178286668613" blue="0.9061178286668613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dF9-Vu-zXz" firstAttribute="centerX" secondItem="JX1-DB-inD" secondAttribute="centerX" id="L3V-S7-S1p"/>
+                                    <constraint firstItem="zVe-Ab-vL5" firstAttribute="top" secondItem="JX1-DB-inD" secondAttribute="top" constant="106" id="SN3-Jz-M4V"/>
+                                    <constraint firstItem="dF9-Vu-zXz" firstAttribute="top" secondItem="zVe-Ab-vL5" secondAttribute="bottom" constant="134" id="Wrv-pr-5FO"/>
+                                    <constraint firstItem="zVe-Ab-vL5" firstAttribute="centerX" secondItem="JX1-DB-inD" secondAttribute="centerX" id="kCO-Bo-Xmn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JX1-DB-inD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F1K-XB-8mq"/>
+                            <constraint firstItem="JX1-DB-inD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZTn-fk-FVu"/>
+                            <constraint firstItem="JX1-DB-inD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hOs-o3-s6D"/>
+                            <constraint firstItem="JX1-DB-inD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vCw-YI-1e7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+        <!--Spin Home Controller-->
+        <scene sceneID="i3b-1L-glA">
+            <objects>
+                <viewController id="Gw3-Zv-Pr9" customClass="SpinHomeController" customModule="Spin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="10a-cq-NsD" customClass="GradientView" customModule="Spin" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Choose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhr-5T-40c">
+                                <rect key="frame" x="100.5" y="126" width="175" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="BFP-bX-HR2"/>
+                                    <constraint firstAttribute="width" constant="175" id="EsB-Mo-20C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Q5M-Ol-T3x">
+                                <rect key="frame" x="35.5" y="401" width="305" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-zE-Rzs" customClass="RoundButton" customModule="Spin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                        <color key="backgroundColor" red="0.033594113639999999" green="0.68123061630000004" blue="0.88939393590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JrU-BJ-uni"/>
+                                            <constraint firstAttribute="width" constant="75" id="vfz-5A-3Rh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Artists">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="0gd-uS-cZU" kind="show" id="A3g-us-70H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmJ-7C-Axu" customClass="RoundButton" customModule="Spin" customModuleProvider="target">
+                                        <rect key="frame" x="115" y="0.0" width="75" height="50"/>
+                                        <color key="backgroundColor" red="0.033594113639999999" green="0.68123061630000004" blue="0.88939393590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Iqq-cD-l6I"/>
+                                            <constraint firstAttribute="width" constant="75" id="owH-HW-I6T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Genres">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3D-nG-90y" customClass="RoundButton" customModule="Spin" customModuleProvider="target">
+                                        <rect key="frame" x="230" y="0.0" width="75" height="50"/>
+                                        <color key="backgroundColor" red="0.033594113639999999" green="0.68123061630000004" blue="0.88939393590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CZz-k6-UZc"/>
+                                            <constraint firstAttribute="width" constant="75" id="D0S-tw-57u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Albums">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90611782870000002" green="0.90611782870000002" blue="0.90611782870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q5M-Ol-T3x" firstAttribute="top" secondItem="nhr-5T-40c" secondAttribute="bottom" constant="217" id="Uux-U6-Nyi"/>
+                            <constraint firstItem="nhr-5T-40c" firstAttribute="top" secondItem="dbF-Tb-WcG" secondAttribute="top" constant="106" id="Zbg-kh-Cc0"/>
+                            <constraint firstItem="Q5M-Ol-T3x" firstAttribute="centerX" secondItem="10a-cq-NsD" secondAttribute="centerX" id="dDf-ka-yAZ"/>
+                            <constraint firstItem="nhr-5T-40c" firstAttribute="centerX" secondItem="10a-cq-NsD" secondAttribute="centerX" id="xgY-e8-XAl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dbF-Tb-WcG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6G-xs-7PG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="32.833583208395808"/>
+        </scene>
+        <!--Artists Controller-->
+        <scene sceneID="wkc-LT-qgX">
+            <objects>
+                <viewController id="0gd-uS-cZU" customClass="ArtistsController" customModule="Spin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQL-ed-gar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kws-CT-yvV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReY-KZ-5Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="33"/>
+        </scene>
+    </scenes>
+</document>
