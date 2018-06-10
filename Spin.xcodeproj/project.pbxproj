@@ -17,6 +17,7 @@
 		199E64CC20C986060001B1FB /* SpinHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E64CB20C986060001B1FB /* SpinHomeController.swift */; };
 		199E64CE20C9882B0001B1FB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E64CD20C9882B0001B1FB /* GradientView.swift */; };
 		199E64D020C989B90001B1FB /* ArtistsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E64CF20C989B90001B1FB /* ArtistsController.swift */; };
+		19C38B2E20CCD55C00C6D4A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C38B2D20CCD55C00C6D4A0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		199E64CB20C986060001B1FB /* SpinHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinHomeController.swift; sourceTree = "<group>"; };
 		199E64CD20C9882B0001B1FB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		199E64CF20C989B90001B1FB /* ArtistsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsController.swift; sourceTree = "<group>"; };
+		19C38B2D20CCD55C00C6D4A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		199E64AD20C981290001B1FB /* Spin */ = {
 			isa = PBXGroup;
 			children = (
+				19C38B2C20CCD54100C6D4A0 /* Services */,
 				199E64C420C981690001B1FB /* Views */,
 				199E64C320C981570001B1FB /* Controllers */,
 				199E64AE20C981290001B1FB /* AppDelegate.swift */,
@@ -93,6 +96,14 @@
 				199E64CD20C9882B0001B1FB /* GradientView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		19C38B2C20CCD54100C6D4A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19C38B2D20CCD55C00C6D4A0 /* Constants.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				199E64C620C981E90001B1FB /* MainController.swift in Sources */,
 				199E64AF20C981290001B1FB /* AppDelegate.swift in Sources */,
 				199E64CC20C986060001B1FB /* SpinHomeController.swift in Sources */,
+				19C38B2E20CCD55C00C6D4A0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
